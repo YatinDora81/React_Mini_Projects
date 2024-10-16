@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shimmerAutoCompleteAnimation{
+    background-color: #2e3644;
+    animation: ania 0.8s infinite ease-in-out ;
+
+}
+
+
+@keyframes ania {
+    50%{
+        background-color: rgba(47, 41, 41, 0.282);
+        opacity: 20;
+    }
+}
