@@ -16,17 +16,32 @@ const OtpSection = ({ phoneNo, length }) => {
   
 
   const onChangeHandler = (e,index)=>{
+
+    // if( e.target.value==="" ) return
+    const value = e.target.value;
+    if (isNaN(value)) return;
+
     const arr = [...allOtps]
     arr[index] = e.target.value.substring( e.target.value.length-1 );
-    // console.log(arr);
-
+    // console.log(arr);    
     
     setAllOpts( arr )
-    if( index+1<length ){
+    if( value && index+1<length ){
         inpRefs.current[index+1].focus()
     }
+  }
 
-}
+  const onKeyDownHandler = (e,index)=>{
+    if(e.key==="Backspace" && !allOtps[index] && index-1>=0 ){
+      inpRefs.current[index-1].focus();
+    }
+    
+  }
+
+  const onClickHandler = (index)=>{
+    inpRefs.current[index].setSelectionRange(1,1)
+  }
+
 
   return (
     <div>
@@ -40,7 +55,8 @@ const OtpSection = ({ phoneNo, length }) => {
             ref={(e)=> inpRefs.current[i] = e}
             value={allOtps[i]} 
             onChange={(e)=>onChangeHandler(e,i)}
-            onClick={()=>{}}
+            onClick={()=>{onClickHandler(i)}}
+            onKeyDown={(e)=>onKeyDownHandler(e,i)}
             />
         ))}
       </div>
