@@ -8,6 +8,7 @@ import Multi_Select_Input from './pages/Multi_Select_Input.jsx'
 import Folder_System from './pages/Folder_System.jsx'
 import  { Toaster } from 'react-hot-toast';
 import Phone_Otp from './pages/Phone_Otp.jsx'
+import CartSteper from './pages/CartSteper.jsx'
 
 const router = createBrowserRouter( [
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter( [
   {
     path : "/phone-otp",
     element : <Phone_Otp></Phone_Otp>
+  },
+  {
+    path : "/cartsteper",
+    element : <CartSteper></CartSteper>
   }
 ] )
 
