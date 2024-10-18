@@ -69,8 +69,8 @@ const CartSteper = () => {
               key={ind}
             >
               <div
-                className={` border  text-center text-2xl rounded-full h-12 w-12 flex justify-center items-center bg-gray-300 text-black ${
-                  ind === currStep ? " bg-blue-500 text-white" : ""
+                className={` border  text-center text-2xl rounded-full h-12 w-12 flex justify-center items-center  text-black ${
+                  ind === currStep ? " bg-blue-600 text-white" : "bg-gray-300"
                 } ${currStep > ind ? "bg-green-500 text-white" : ""}`}
               >
                 {currStep > ind ? <TiTickOutline></TiTickOutline> : ind + 1}
