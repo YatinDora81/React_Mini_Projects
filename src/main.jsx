@@ -9,6 +9,7 @@ import Folder_System from './pages/Folder_System.jsx'
 import  { Toaster } from 'react-hot-toast';
 import Phone_Otp from './pages/Phone_Otp.jsx'
 import CartSteper from './pages/CartSteper.jsx'
+import MemoryGame from './pages/MemoryGame.jsx'
 
 const router = createBrowserRouter( [
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter( [
   {
     path : "/cartsteper",
     element : <CartSteper></CartSteper>
+  },
+  {
+    path : "/memory-game",
+    element : <MemoryGame />
   }
 ] )
 
