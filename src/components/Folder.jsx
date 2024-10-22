@@ -20,6 +20,7 @@ const Folder = ({ files  , setFiles , orgFiles}) => {
     if( e.key==="Enter" || i){
         if( inputRef.current.value.trim()==="" ) {
             // console.log("khali");
+            setIsInput(false)
         }else{
 
             // add logic here

@@ -4,7 +4,7 @@ import OtpSection from "../components/OtpSection";
 
 const Phone_Otp = () => {
   const [number, setNumber] = useState("");
-  const [openOtp, setOpenOtp] = useState(true);
+  const [openOtp, setOpenOtp] = useState(false);
 
   return (
     <div className="bg-[#121212] min-h-[100vh] text-white flex justify-center items-center">
