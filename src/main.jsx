@@ -10,6 +10,7 @@ import  { Toaster } from 'react-hot-toast';
 import Phone_Otp from './pages/Phone_Otp.jsx'
 import CartSteper from './pages/CartSteper.jsx'
 import MemoryGame from './pages/MemoryGame.jsx'
+import StarRating from './pages/StarRating.jsx'
 
 const router = createBrowserRouter( [
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter( [
   {
     path : "/memory-game",
     element : <MemoryGame />
+  },
+  {
+    path : "/star-rating",
+    element : <StarRating />
   }
 ] )
 

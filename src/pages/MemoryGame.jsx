@@ -37,6 +37,8 @@ const MemoryGame = () => {
     setSolved([]);
     setDisable(false);
     setWon(false);
+    setLose(false)
+    setMoves(0)
 
     const cardlen = gridSize * gridSize;
     const pair = Math.floor(cardlen / 2);
