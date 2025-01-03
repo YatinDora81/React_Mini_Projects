@@ -11,6 +11,7 @@ import Phone_Otp from './pages/Phone_Otp.jsx'
 import CartSteper from './pages/CartSteper.jsx'
 import MemoryGame from './pages/MemoryGame.jsx'
 import StarRating from './pages/StarRating.jsx'
+import CarouselPage from './pages/CarouselPage.jsx'
 
 const router = createBrowserRouter( [
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter( [
   {
     path : "/star-rating",
     element : <StarRating />
+  },
+  {
+    path : "/carousel",
+    element : <CarouselPage />
   }
 ] )
 
